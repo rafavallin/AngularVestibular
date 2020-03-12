@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularVestibular": {
+    "angular-vestibular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularVestibular",
+            "outputPath": "dist/angular-vestibular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularVestibular:build"
+            "browserTarget": "angular-vestibular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularVestibular:build:production"
+              "browserTarget": "angular-vestibular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularVestibular:build"
+            "browserTarget": "angular-vestibular:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularVestibular:serve"
+            "devServerTarget": "angular-vestibular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularVestibular:serve:production"
+              "devServerTarget": "angular-vestibular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "AngularVestibular"
+  "defaultProject": "angular-vestibular"
 }
