@@ -1,0 +1,40 @@
+.invalid > input {
+    border-color: #fb4b4b;
+}
+
+.invalid > span {
+    color: #fb4b4b;
+}
+
+.valid > input {
+    border-color: #02a30a;
+}
+
+.valid > span {
+    color: #02a30a;
+}
+
+input {
+    height: 48px;
+    width: 100%;
+    padding: 10px;
+    color: rgba(47,46,46,1);
+    background: transparent;
+    border: 1px solid rgba(47,46,46, 0.2);
+    box-sizing: border-box;
+}
+
+.form-input {
+    padding: 10px;
+}
+
+span {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border-color: rgba(47,46,46, 0.8);
+    outline: 0;
+}

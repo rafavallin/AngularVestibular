@@ -3,6 +3,7 @@ import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -13,11 +14,13 @@ import { FormsModule } from '@angular/forms';
     ],
     exports: [
         InputComponent,
-        ButtonComponent
+        ButtonComponent,
+        CardComponent
     ],
     declarations: [
         InputComponent,
-        ButtonComponent
+        ButtonComponent,
+        CardComponent
     ],
     providers: [],
 })
