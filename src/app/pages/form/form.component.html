@@ -1,1 +1,8 @@
-<span>vallin viado</span>
+<section>
+    <h1>Quero me inscrever!</h1>
+    <span>{{message}}</span>
+    <div class="btns-container">
+        <app-button [buttonConfig]="textBtnConfig"
+                (textBtnClickEmt)="onClickEventReceived($event)"></app-button>
+    </div>
+  </section>
