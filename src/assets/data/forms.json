@@ -1,6 +1,62 @@
 [
     {
-        "label": "",
-        "expectedvalue": ""
+        "label": "*Nome",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 2
+    },
+    {
+        "label": "*Sobrenome",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 2
+    },
+    {
+        "label": "*Email",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 1
+    },
+    {
+        "label": "*Celular - (xx) xxxxx-xxxx",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 1
+    },
+    {
+        "label": "*Endereço",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 1
+    },
+    {
+        "label": "*Cidade",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 2
+    },
+    {
+        "label": "*Estado",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 2
+    },
+    {
+        "label": "*Pais",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 2
+    },
+    {
+        "label": "*Código postal (CEP)",
+        "expectedvalue": "",
+        "type": "text",
+        "qtdbycol": 2
+    },
+    {
+        "label": "*Data de nascimento",
+        "expectedvalue": "",
+        "type": "date",
+        "qtdbycol": 1
     }
 ]
