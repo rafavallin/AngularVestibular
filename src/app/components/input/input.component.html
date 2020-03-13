@@ -1,0 +1,7 @@
+<div class="form-input {{formclass}}">
+    <label>{{label}}</label>
+    <input (keyup)="validations()" (blur)="validations()" [(ngModel)]="value" type="{{type}}">
+    <span>
+        {{formmessage}}
+    </span>
+</div>

@@ -16,4 +16,8 @@ export class ButtonComponent implements OnInit {
     this.textBtnClickEmt.emit('você apertou o registrar!');
   }
 
+  onImgBtnClick() {
+      
+  }
+
 }
