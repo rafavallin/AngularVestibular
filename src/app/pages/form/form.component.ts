@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { InputModel } from 'src/app/models/input.model';
 
 @Component({
     selector: 'app-form',
@@ -24,8 +26,12 @@ export class FormComponent implements OnInit {
       onClickEventReceived(event: string) {
         this.message = event;
     }
+
+    public inputs: InputModel[] = [];
     
-    constructor() { }
+    constructor(private httpclient: HttpClient) { 
+      httpclient.get<InputModel[]>('assets/data/forms.json').subscribe(x=> this.inputs = x);
+    }
 
     ngOnInit() { }
 

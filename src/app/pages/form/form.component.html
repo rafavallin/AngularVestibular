@@ -10,11 +10,8 @@
   <div class="row">
     <div class="col-8">
       <div class="row">
-        <div class="col">
-          <app-input [expectedvalue]="'israel'" [label]="'*Nome'"></app-input>
-        </div>
-        <div class="col">
-          <app-input [expectedvalue]="'sodano'" [label]="'*Sobrenome'"></app-input>
+        <div *ngFor="let input of inputs" class="col-{{(12 / input.qtdbycol)}}">
+          <app-input [expectedvalue]="input.expectedvalue" [label]="input.label" [type]="input.type"></app-input>
         </div>
       </div>
     </div>
